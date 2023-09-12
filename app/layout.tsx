@@ -3,6 +3,9 @@ import { Inter } from 'next/font/google'
 import { ReactNode } from 'react'
 import StyledComponentsRegistry from '@/lib/registry'
 import GlobalStyles from '@/styles/GlobalStyles'
+import { Header } from '@/components/header/header'
+import { Toaster } from '@/providers/toaster'
+import { Layout } from '@/components/ui/layout/layout'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,7 +20,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className={inter.className}>
         <StyledComponentsRegistry>
           <GlobalStyles />
-          {children}
+          <Layout>
+            <Header />
+            {children}
+          </Layout>
+          <Toaster />
         </StyledComponentsRegistry>
       </body>
     </html>

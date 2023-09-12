@@ -7,12 +7,23 @@ import { Button } from '@/components/ui/button/button'
 import { ShoppingBag } from 'lucide-react'
 import { SizeSelector } from '@/components/size-selector/size-selector'
 import { Pagination } from '@/components/pagination/pagination'
+import { useCartStore } from '@/store/cart'
+import { Product } from '@/store/products'
+import toast from 'react-hot-toast'
 
 type Props = {
   data: ProductsResponse
 }
 
 export function ProductList({ data }: Props) {
+  const addProductToCart = useCartStore((state) => state.addToCart)
+  const handleAddToCart = (product: Product) => {
+    addProductToCart(product, 1)
+    toast.success('Product added to cart', {
+      position: 'bottom-center'
+    })
+  }
+
   return (
     <>
       <ProductsGrid>
@@ -27,7 +38,7 @@ export function ProductList({ data }: Props) {
 
               <SizeSelector sizes={['PP', 'P', 'M', 'G']} />
 
-              <Button>
+              <Button onClick={() => handleAddToCart(product)}>
                 <ShoppingBag />
                 Comprar
               </Button>
