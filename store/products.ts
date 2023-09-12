@@ -82,106 +82,26 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: '109',
-    name: 'Saia Midi',
+    name: 'Saia Midi de Seda Estampada',
     category: 'Saias',
     price: 40.0,
-    imageUrl: '/img/product.webp',
+    imageUrl: 'https://res.cloudinary.com/dnro5pdpx/image/upload/v1694544852/products/prod10.jpg',
     sku: 'SAI-0109-FGHIJ'
   },
   {
     id: '110',
-    name: 'Vestido de Cocktail',
-    category: 'Vestidos',
-    price: 65.0,
-    imageUrl: '/img/product.webp',
-    sku: 'VES-0110-GHIJK'
+    name: 'Conjunto Inverno Algodão Estampado',
+    category: 'Conjuntos',
+    price: 65.99,
+    imageUrl: 'https://res.cloudinary.com/dnro5pdpx/image/upload/v1694545059/products/prod11.jpg',
+    sku: 'CON-0110-GHIJK'
   },
   {
     id: '111',
-    name: 'Blusa de Seda',
-    category: 'Blusas',
-    price: 40.0,
-    imageUrl: '/img/product.webp',
-    sku: 'BLU-0111-HIJKL'
-  },
-  {
-    id: '112',
-    name: 'Calça Legging',
+    name: 'Calça em Seda Estampada com Cinto',
     category: 'Calças',
-    price: 25.0,
-    imageUrl: '/img/product.webp',
-    sku: 'CAL-0112-IJKLM'
-  },
-  {
-    id: '113',
-    name: 'Meia Alta',
-    category: 'Meias',
-    price: 12.0,
-    imageUrl: '/img/product.webp',
-    sku: 'MEI-0113-JKLMA'
-  },
-  {
-    id: '114',
-    name: 'Saia Longa',
-    category: 'Saias',
-    price: 50.0,
-    imageUrl: '/img/product.webp',
-    sku: 'SAI-0114-KLMAB'
-  },
-  {
-    id: '115',
-    name: 'Blusa Casual',
-    category: 'Blusas',
-    price: 30.0,
-    imageUrl: '/img/product.webp',
-    sku: 'BLU-0115-LMABC'
-  },
-  {
-    id: '116',
-    name: 'Vestido de Noite',
-    category: 'Vestidos',
-    price: 80.0,
-    imageUrl: '/img/product.webp',
-    sku: 'VES-0116-MABCD'
-  },
-  {
-    id: '117',
-    name: 'Calça Jeans Boyfriend',
-    category: 'Calças',
-    price: 50.0,
-    imageUrl: '/img/product.webp',
-    sku: 'CAL-0117-ABCDE'
-  },
-  {
-    id: '118',
-    name: 'Meia Curta',
-    category: 'Meias',
-    price: 8.0,
-    imageUrl: '/img/product.webp',
-    sku: 'MEI-0118-BCDEF'
-  },
-  {
-    id: '119',
-    name: 'Saia Plissada Midi',
-    category: 'Saias',
-    price: 45.0,
-    imageUrl: '/img/product.webp',
-    sku: 'SAI-0119-CDEFG'
-  },
-  {
-    id: '120',
-    name: 'Blusa de Linho',
-    category: 'Blusas',
-    price: 35.0,
-    imageUrl: '/img/product.webp',
-    sku: 'BLU-0120-DEFGH'
-  },
-  {
-    id: '121',
-    name: 'Vestido Estampado',
-    category: 'Vestidos',
-    price: 55.0,
-    imageUrl: '/img/product.webp',
-    sku: 'VES-0121-EFGHI'
+    price: 99.99,
+    imageUrl: 'https://res.cloudinary.com/dnro5pdpx/image/upload/v1694545171/products/prod%2012.jpg',
+    sku: 'CAL-0111-HIJKL'
   }
 ]
