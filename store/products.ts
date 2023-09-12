@@ -13,7 +13,7 @@ export const PRODUCTS: Product[] = [
     name: 'Vestido Floral de Verão Estampado',
     category: 'Vestidos',
     price: 50.0,
-    imageUrl: '/img/product.webp',
+    imageUrl: 'https://res.cloudinary.com/dnro5pdpx/image/upload/v1694542359/products/product01.jpg',
     sku: 'VES-0100-ABCDE'
   },
   {

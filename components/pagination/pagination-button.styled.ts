@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const PaginationButtonContainer = styled.button<{ isActive: boolean }>`
+export const PaginationButtonContainer = styled.button<{ isCurrent?: boolean }>`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,10 +8,9 @@ export const PaginationButtonContainer = styled.button<{ isActive: boolean }>`
   padding: 0.8rem 1.2rem;
   height: 3rem;
   width: 3rem;
-
   border: none;
-  background-color: ${({ isActive }) => (isActive ? '#007bff' : '#fff')};
-  color: ${({ isActive }) => (isActive ? '#fff' : '#007bff')};
+  background-color: ${({ isCurrent }) => (isCurrent ? '#007bff' : '#fff')};
+  color: ${({ isCurrent }) => (isCurrent ? '#fff' : '#007bff')};
   cursor: pointer;
   border-radius: 1.5rem;
   transition: all 0.2s ease-in-out;

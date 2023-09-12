@@ -21,7 +21,7 @@ export function Pagination({ totalPages }: Props) {
       {Array.from({ length: totalPages }, (_, index) => index + 1)?.map((page) => (
         <PaginationButton
           key={page}
-          isActive={Number(currentPage) === page}
+          isCurrent={Number(currentPage) === page}
           page={page}
           onClick={() => handleGoToPage(page)}
         />

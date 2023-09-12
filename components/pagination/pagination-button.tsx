@@ -2,12 +2,12 @@ import { ButtonHTMLAttributes } from 'react'
 import { PaginationButtonContainer } from '@/components/pagination/pagination-button.styled'
 
 interface PaginationButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  isActive: boolean
+  isCurrent: boolean
   page: number
 }
-export function PaginationButton({ isActive, page, ...props }: PaginationButtonProps) {
+export function PaginationButton({ isCurrent, page, ...props }: PaginationButtonProps) {
   return (
-    <PaginationButtonContainer isActive={isActive} {...props}>
+    <PaginationButtonContainer isCurrent={isCurrent} {...props}>
       {page}
     </PaginationButtonContainer>
   )
