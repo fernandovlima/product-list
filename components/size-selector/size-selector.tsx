@@ -7,7 +7,7 @@ type Props = {
 }
 
 export function SizeSelector({ sizes }: Props) {
-  const [selected, setSelected] = useState('')
+  const [selected, setSelected] = useState('P')
 
   function onSelectSize(size: string) {
     setSelected(size)

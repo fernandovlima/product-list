@@ -9,4 +9,9 @@ export const ProductCardImageContainer = styled.div`
     object-position: center;
     object-fit: cover;
   }
+
+  @media (max-width: 768px) {
+    height: 30rem;
+    width: 20rem;
+  }
 `
