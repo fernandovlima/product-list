@@ -11,7 +11,7 @@ type Props = {
 export function ProductCardImage({ imageUrl }: Props) {
   return (
     <ProductCardImageContainer>
-      <Image src={imageUrl} alt={`Product image`} fill blurDataURL={imageUrl} />
+      <Image src={imageUrl} alt={`Product image`} fill blurDataURL={imageUrl} priority />
     </ProductCardImageContainer>
   )
 }
