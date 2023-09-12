@@ -8,6 +8,6 @@ export const ProductCardTitleContainer = styled.div`
   font-weight: 400;
   color: #333;
   width: 100%;
-  text-transform: uppercase;
+  text-transform: lowercase;
   ${linesToShow(1)}
 `

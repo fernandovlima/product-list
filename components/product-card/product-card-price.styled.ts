@@ -10,7 +10,7 @@ export const ProductCardPriceContainer = styled.div`
 export const Price = styled.p`
   font-size: 1.8rem;
   font-weight: 700;
-  color: #333;
+  color: #444;
   width: 100%;
 `
 

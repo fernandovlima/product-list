@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 import { PRODUCTS } from '@/store/products'
 
-const PAGE_SIZE = 8 // Número de produtos por página
+const PAGE_SIZE = 4 // Número de produtos por página
 
 export async function GET(req: Request, res: Response) {
   const { searchParams } = new URL(req.url)

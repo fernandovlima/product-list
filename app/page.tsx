@@ -1,5 +1,8 @@
 import { ProductList } from '@/components/product-list'
 import { Product } from '@/store/products'
+import { getProducts } from '@/lib/products'
+import { Suspense } from 'react'
+import { MainContainer } from '@/app/page.styled'
 
 export type ProductsResponse = {
   products: Product[]
@@ -11,13 +14,15 @@ export default async function Home({
 }: {
   searchParams?: { [key: string]: string | string[] | undefined }
 }) {
-  const res = await fetch('http://localhost:3000/api/products')
-  const data: ProductsResponse = await res.json()
+  const page = typeof searchParams?.page === 'string' ? Number(searchParams.page) : 1
+
+  const data = await getProducts(page)
 
   return (
-    <main>
-      <h1>Products</h1>
-      <ProductList data={data} />
-    </main>
+    <MainContainer>
+      <Suspense fallback={<div>Loading...</div>}>
+        <ProductList data={data} />
+      </Suspense>
+    </MainContainer>
   )
 }
