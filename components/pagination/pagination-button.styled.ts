@@ -8,7 +8,7 @@ export const PaginationButtonContainer = styled.button<{ isCurrent?: boolean }>`
   padding: 0.8rem 1.2rem;
   height: 3rem;
   width: 3rem;
-  border: none;
+  border: 1px solid #007bff;
   background-color: ${({ isCurrent }) => (isCurrent ? '#007bff' : '#fff')};
   color: ${({ isCurrent }) => (isCurrent ? '#fff' : '#007bff')};
   cursor: pointer;
