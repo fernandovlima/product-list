@@ -4,6 +4,8 @@ import { createGlobalStyle, css } from 'styled-components'
 const styled = { createGlobalStyle }
 
 export const styles = css`
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
   /*
       1. Use a more-intuitive box-sizing model.
     */
@@ -21,6 +23,7 @@ export const styles = css`
 
   html {
     font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
   }
   /*
   3. Add accessible line-height

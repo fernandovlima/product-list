@@ -4,7 +4,7 @@ import { withThemeFromJSXProvider } from '@storybook/addon-styling'
 import { createGlobalStyle } from 'styled-components'
 
 const globalStyles = createGlobalStyle`
-  ${styles}
+    ${styles}
 `
 
 const preview: Preview = {
