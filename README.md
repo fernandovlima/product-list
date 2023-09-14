@@ -20,6 +20,8 @@ Lista simples de produtos com paginação.
 pnpm install
 pnpm dev
 ```
+acesse: http://localhost:3000 para visualizar o projeto
+
 ### Documentação
 Componentes e páginas podem ser visualizados no storybook
 

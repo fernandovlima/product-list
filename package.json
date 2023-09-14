@@ -26,7 +26,6 @@
     "zustand": "^4.4.1"
   },
   "devDependencies": {
-    "@faker-js/faker": "^8.0.2",
     "@storybook/addon-essentials": "^7.4.1",
     "@storybook/addon-interactions": "^7.4.1",
     "@storybook/addon-links": "^7.4.1",
