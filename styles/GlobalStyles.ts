@@ -2,7 +2,8 @@
 
 import { createGlobalStyle, css } from 'styled-components'
 const styled = { createGlobalStyle }
-const styles = css`
+
+export const styles = css`
   /*
       1. Use a more-intuitive box-sizing model.
     */

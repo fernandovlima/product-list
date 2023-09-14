@@ -1,6 +1,11 @@
 import type { Preview } from '@storybook/react'
-import GlobalStyles from '../styles/GlobalStyles'
+import GlobalStyles, { styles } from '../styles/GlobalStyles'
 import { withThemeFromJSXProvider } from '@storybook/addon-styling'
+import { createGlobalStyle } from 'styled-components'
+
+const globalStyles = createGlobalStyle`
+  ${styles}
+`
 
 const preview: Preview = {
   parameters: {
@@ -14,7 +19,7 @@ const preview: Preview = {
   },
   decorators: [
     withThemeFromJSXProvider({
-      GlobalStyles
+      GlobalStyles: globalStyles
     })
   ]
 }
