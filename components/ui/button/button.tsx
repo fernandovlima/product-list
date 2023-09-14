@@ -1,7 +1,7 @@
 // src/components/Button.tsx
 
 import { ButtonHTMLAttributes, forwardRef, ReactNode } from 'react'
-import { StyledButton } from '@/components/ui/button/buton.styled'
+import { StyledButton } from './button.styled'
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode

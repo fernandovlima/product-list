@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import { ProductCardContentContainer } from '@/components/product-card/product-card-content.styled'
+import { ProductCardContentContainer } from './product-card-content.styled'
 
 type Props = {
   children: ReactNode

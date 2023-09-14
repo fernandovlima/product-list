@@ -1,6 +1,6 @@
 import { ReactNode, useState } from 'react'
-import { SelectSizeButton } from '@/components/size-selector/size-selector-button.styled'
-import { SizeSelectorRootContainer } from '@/components/size-selector/size-selector.styled'
+import { SelectSizeButton } from './size-selector-button.styled'
+import { SizeSelectorRootContainer } from './size-selector.styled'
 
 type Props = {
   sizes: string[]

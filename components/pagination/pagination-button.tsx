@@ -1,5 +1,5 @@
 import { ButtonHTMLAttributes } from 'react'
-import { PaginationButtonContainer } from '@/components/pagination/pagination-button.styled'
+import { PaginationButtonContainer } from './pagination-button.styled'
 
 interface PaginationButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   isCurrent: boolean

@@ -1,4 +1,4 @@
-import { ProductList } from '@/components/product-list'
+import { ProductList } from '@/components/product-list/product-list'
 import { Product } from '@/store/products'
 import { getProducts } from '@/lib/products'
 import { Suspense } from 'react'

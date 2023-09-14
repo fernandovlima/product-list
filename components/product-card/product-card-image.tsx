@@ -1,8 +1,5 @@
-'use client'
-
 import Image from 'next/image'
-import styled from 'styled-components'
-import { ProductCardImageContainer } from '@/components/product-card/product-card-image.styled'
+import { ProductCardImageContainer } from './product-card-image.styled'
 
 type Props = {
   imageUrl: string

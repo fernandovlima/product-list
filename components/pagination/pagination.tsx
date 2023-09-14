@@ -1,8 +1,8 @@
 'use client'
 
-import { PaginationContainer } from '@/components/pagination/pagination.styled'
-import { PaginationButton } from '@/components/pagination/pagination-button'
-import { usePathname, useRouter, useSearchParams } from 'next/navigation'
+import { PaginationContainer } from './pagination.styled'
+import { PaginationButton } from './pagination-button'
+import { useRouter, useSearchParams } from 'next/navigation'
 
 type Props = {
   totalPages: number

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { linesToShow } from '@/styles/utils'
+import { linesToShow } from '../../styles/utils'
 
 export const ProductCardTitleContainer = styled.div`
   display: flex;

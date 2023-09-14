@@ -1,6 +1,4 @@
-'use client'
-
-import { Price, ProductCardPriceContainer, SplitPrice } from '@/components/product-card/product-card-price.styled'
+import { Price, ProductCardPriceContainer, SplitPrice } from './product-card-price.styled'
 
 type Props = {
   price: number

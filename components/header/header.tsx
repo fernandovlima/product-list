@@ -1,4 +1,4 @@
-import { HeaderContainer } from '@/components/header/header.styled'
+import { HeaderContainer } from './header.styled'
 import { CartButton } from '@/components/cart/cart'
 
 export function Header() {

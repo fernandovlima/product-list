@@ -1,5 +1,5 @@
 import { ButtonHTMLAttributes, ReactNode } from 'react'
-import { SelectSizeButton } from '@/components/size-selector/size-selector-button.styled'
+import { SelectSizeButton } from './size-selector-button.styled'
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   selected: boolean
