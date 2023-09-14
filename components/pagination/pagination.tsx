@@ -13,6 +13,9 @@ export function Pagination({ totalPages }: Props) {
   const currentPage = searchParams.get('page') ?? 1
 
   const handleGoToPage = async (page: number) => {
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }, 100)
     router.push(`?page=${page}`)
   }
 

@@ -3,6 +3,7 @@ import { Product } from '@/store/products'
 import { getProducts } from '@/lib/products'
 import { Suspense } from 'react'
 import { MainContainer } from '@/app/page.styled'
+import { Pagination } from '@/components/pagination/pagination'
 
 export type ProductsResponse = {
   products: Product[]
@@ -22,6 +23,7 @@ export default async function Home({
     <MainContainer>
       <Suspense fallback={<div>Loading...</div>}>
         <ProductList data={data} />
+        <Pagination totalPages={data.totalPages} />
       </Suspense>
     </MainContainer>
   )

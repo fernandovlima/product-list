@@ -5,5 +5,5 @@ export const PaginationContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  margin-top: 20px;
+  //margin: 2rem 0;
 `

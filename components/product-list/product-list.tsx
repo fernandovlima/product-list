@@ -5,7 +5,6 @@ import { ProductCard } from '../product-card'
 import { Button } from '../ui/button/button'
 import { ShoppingBag } from 'lucide-react'
 import { SizeSelector } from '../size-selector/size-selector'
-import { Pagination } from '../pagination/pagination'
 import { useCartStore } from '../../store/cart'
 import { Product } from '@/store/products'
 import toast from 'react-hot-toast'
@@ -25,28 +24,25 @@ export function ProductList({ data }: Props) {
   }
 
   return (
-    <>
-      <ProductsGrid>
-        {data.products.map((product) => (
-          <ProductCard.Root key={product.id}>
-            <ProductCard.Image imageUrl={product.imageUrl} />
-            <ProductCard.Content>
-              <ProductCard.Title>
-                <h2>{product.name}</h2>
-              </ProductCard.Title>
-              <ProductCard.Price price={product.price} />
+    <ProductsGrid>
+      {data.products.map((product) => (
+        <ProductCard.Root key={product.id}>
+          <ProductCard.Image imageUrl={product.imageUrl} />
+          <ProductCard.Content>
+            <ProductCard.Title>
+              <h2>{product.name}</h2>
+            </ProductCard.Title>
+            <ProductCard.Price price={product.price} />
 
-              <SizeSelector sizes={['PP', 'P', 'M', 'G']} />
+            <SizeSelector sizes={['PP', 'P', 'M', 'G']} />
 
-              <Button onClick={() => handleAddToCart(product)}>
-                <ShoppingBag />
-                Comprar
-              </Button>
-            </ProductCard.Content>
-          </ProductCard.Root>
-        ))}
-      </ProductsGrid>
-      <Pagination totalPages={data.totalPages} />
-    </>
+            <Button onClick={() => handleAddToCart(product)}>
+              <ShoppingBag />
+              Comprar
+            </Button>
+          </ProductCard.Content>
+        </ProductCard.Root>
+      ))}
+    </ProductsGrid>
   )
 }

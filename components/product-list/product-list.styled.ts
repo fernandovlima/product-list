@@ -9,7 +9,6 @@ export const ProductsGrid = styled.div`
   margin: 0 auto;
   justify-content: center;
   justify-items: center;
-  overflow-y: auto;
 
   @media (max-width: 1200px) {
     grid-template-columns: repeat(auto-fill, minmax(240px, 40%));
